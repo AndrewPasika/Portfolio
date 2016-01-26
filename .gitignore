@@ -16,9 +16,10 @@ hs_err_pid*
 
 #Gradle
 *.gradle
-gradle.bat
-gradle.properties
+*.bat
+*.properties
 .gradletasknamecache
 .gradle/
+gradle/
 build/
 bin/
