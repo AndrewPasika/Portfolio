@@ -15,6 +15,9 @@ hs_err_pid*
 .idea/
 
 #Gradle
+*.gradle
+gradle.bat
+gradle.properties
 .gradletasknamecache
 .gradle/
 build/
