@@ -17,10 +17,10 @@
 <jsp:include page="../pageParts/header.jsp"/>
 
 <body>
-
 <form action="/admin" method="POST">
     <input type="submit" value="Show all users">
 </form>
+<p>${requestScope.error_db}</p>
 
     <c:if test="${not empty sessionScope.flag}">
         <jsp:include page="userList.jsp"/>

@@ -10,21 +10,26 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <body>
-<table style="width:auto">
+<table style="width:auto" border="1">
     <tr>
+        <th>ID</th>
         <th>Name</th>
         <th>Surname</th>
         <th>login</th>
+        <th>password</th>
         <th>email</th>
-        <th>id</th>
     </tr>
+    <p>
+        <c:forEach items="${sessionScope.list}" var="user">
     <tr>
-        <td>${user.name}</td>
-        <td>${user.surname}</td>
-        <td>${user.login}</td>
-        <td>${user.email}</td>
-        <td>${user.id}</td>
+            <td><c:out value="${user.id}"/></td>
+            <td><c:out value="${user.name}"/></td>
+            <td><c:out value="${user.surname}"/></td>
+            <td><c:out value="${user.login}"/></td>
+            <td><c:out value="${user.password}"/></td>
+            <td><c:out value="${user.email}"/></td>
     </tr>
+        </c:forEach>
 </table>
 </body>
 </html>

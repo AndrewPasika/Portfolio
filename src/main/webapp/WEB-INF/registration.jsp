@@ -18,22 +18,22 @@
 <div align="center">
 <form action="/registration" method="POST">
     <label for="firstname">First name:</label><br>
-    <input type="text" name="firstname" id="firstname">
+    <input type="text" name="firstname" id="firstname" maxlength="30">
     <br><br>
     <label for="surname">Surname:</label><br>
-    <input type="text" name="surname" id="surname">
+    <input type="text" name="surname" id="surname" maxlength="30">
     <br><br>
     <label for="email">*Email:</label><br>
-    <input type="text" name="email" id="email">
+    <input type="text" name="email" id="email" maxlength="30">
     <br><br>
     <label for="login">*Login:</label><br>
-    <input type="text" name="login" id="login">
+    <input type="text" name="login" id="login" maxlength="30">
     <br><br>
     <label for="password">*Password:</label><br>
-    <input type="text" name="password" id="password">
+    <input type="password" name="password" id="password" maxlength="30">
     <br><br>
     <label for="confPass">*Confirm password:</label><br>
-    <input type="text" name="confPass" id="confPass">
+    <input type="password" name="confPass" id="confPass" maxlength="30">
     <br><br>
     <input type="submit" value="Submit">
     <br><br>

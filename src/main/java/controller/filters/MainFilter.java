@@ -8,7 +8,6 @@ import java.io.IOException;
 /**
  * Created by AndriiUSER on 18.11.2015.
  */
-//@WebFilter(urlPatterns = "/*", displayName = "asdasd")
     @WebFilter(servletNames = "RegistrationController")
 public class MainFilter extends AbstractFilter{
 

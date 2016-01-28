@@ -8,13 +8,17 @@
 --%>
 <%@ page pageEncoding="UTF-8" %>
 <html>
-<head>
-    <title>The include Directive Example</title>
-</head>
 <body>
 <div align="left">${welcome} ${name}</div>
 <table style="width:15%" align="right">
     <tr>
+        <c:if test="${userBean}">
+            <td>
+                <form action="/profilePage">
+                    <input type="submit" value="Profile page">
+                </form>
+            </td>
+        </c:if>
         <c:if test="${userBean.id == 1}">
         <td>
             <form action="/admin">
@@ -46,5 +50,5 @@
         </c:if>
     </tr>
 </table>
-
+</body>
 <br/><br/>

@@ -10,23 +10,32 @@
 <head>
     <title>Contact</title>
 </head>
+<body>
 <jsp:include page="pageParts/header.jsp"/>
 
 <form action="/contact" method="POST" align="center">
-    <p><b>Name*</b><br>
-        <input type="text" size="48" name="name">
+    <p><b>Your name</b><br>
+        <input type="text" size="48" name="name" maxlength="50">
+    </p>
+    <p><b>Your email*</b><br>
+        <input type="text" size="48" name="email" maxlength="50">
     </p>
 
-    <p><b>Email*</b><br>
-        <input type="text" size="48" name="email">
+    <p><b>Subject</b><br>
+        <input type="text" size="48" name="email" maxlength="50">
     </p>
 
     <p><b>Message*</b><br>
-        <textarea name="comment" cols="50" rows="6"></textarea>
+        <textarea name="comment" cols="50" rows="6" maxlength="10000"></textarea>
     </p>
 
-    <p><input type="submit" value="Send">
-</form>
+    <a href="http://www.ukr.net">link</a>
+    <form action="Script URL" method="GET|POST">
+        form elements like input, textarea etc.
+    </form>
 
+    <p><input type="submit" value="Send"></p>
+</form>
+</body>
 <jsp:include page="pageParts/footer.jsp"/>
 </html>

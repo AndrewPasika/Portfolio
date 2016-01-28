@@ -25,9 +25,5 @@ public class RegistrationFilter extends AbstractFilter {
         HttpServletResponse resp = (HttpServletResponse) response;
         String result = userServices.checkForRegistration(new HttpServletRequestWrapper(req));
         req.getRequestDispatcher(result).forward(request, response);
-
-        HttpSession session = req.getSession();
-        session.setMaxInactiveInterval(-1);
-        System.out.println(session.getLastAccessedTime());
     }
 }

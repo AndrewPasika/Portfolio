@@ -17,20 +17,19 @@
 <form action="/login" method="POST">
     <br>
     Login/Email:<br>
-    <input type="text" name="loginOrEmail">
+    <input type="text" name="loginOrEmail" maxlength="30">
     <br>
     Password:<br>
-    <input type="text" name="password">
+    <input type="password" name="password" maxlength="30">
     <br><br>
     <input type="submit" value="Submit">
 
     <br><br>
     ${error}
 
-    <%--<c:if test="${not empty error}">--%>
-        <%--<br><br>--%>
-        <%--${error}--%>
-    <%--</c:if>--%>
+    <p bgcolor="red">reference</p>
+    <img src="pageParts/image-slider-2.jpg" alt="test image">
+    
     <%@ page errorPage="errorPages/authenticationError.jsp" %>
 </form>
 </div>
