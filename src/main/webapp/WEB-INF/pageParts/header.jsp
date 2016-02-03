@@ -7,14 +7,23 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page pageEncoding="UTF-8" %>
-<html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Andrew Pasika" />
+    <meta name="Reply-to" content="Pasika2012@gmail.com" />
+    <meta name="Owner" content="Andrew Psika" />
+    <meta name="description" content="This is Andrew Pasika's personal site.
+    Here you can find all the information about him.">
+    <meta name="keywords" content="Andrew, Pasika, portfolio, blog">
+</head>
 <body>
 <div align="left">${welcome} ${name}</div>
 <table style="width:15%" align="right">
     <tr>
-        <c:if test="${userBean}">
+        <c:if test="${not empty sessionScope.userBean}">
             <td>
-                <form action="/profilePage">
+                <form action="/profile">
                     <input type="submit" value="Profile page">
                 </form>
             </td>
@@ -33,7 +42,7 @@
         </td>
         <td>
             <form action="/contact" method="GET">
-                <input type="submit" value="Contact">
+                <input type="submit" value="Contacts">
             </form>
         </td>
         <td>

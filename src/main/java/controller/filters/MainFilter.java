@@ -3,12 +3,13 @@ package controller.filters;
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 
 /**
  * Created by AndriiUSER on 18.11.2015.
  */
-    @WebFilter(servletNames = "RegistrationController")
+    @WebFilter(urlPatterns = "/")
 public class MainFilter extends AbstractFilter{
 
     @Override

@@ -6,14 +6,17 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<html lang="en">
 <head>
     <title>Contact</title>
+    <meta name="description" content="It is the contact page. You can ask me any questions here.">
+    <meta name="keywords" content="contact, feedback, message, questions">
 </head>
 <body>
 <jsp:include page="pageParts/header.jsp"/>
 
-<form action="/contact" method="POST" align="center">
+<div align="center">
+<form action="/contact" method="POST">
     <p><b>Your name</b><br>
         <input type="text" size="48" name="name" maxlength="50">
     </p>
@@ -29,13 +32,9 @@
         <textarea name="comment" cols="50" rows="6" maxlength="10000"></textarea>
     </p>
 
-    <a href="http://www.ukr.net">link</a>
-    <form action="Script URL" method="GET|POST">
-        form elements like input, textarea etc.
-    </form>
-
     <p><input type="submit" value="Send"></p>
 </form>
+</div>
 </body>
 <jsp:include page="pageParts/footer.jsp"/>
 </html>

@@ -1,0 +1,18 @@
+.header{
+    background-color: #d121ff;
+    height: 177px;
+    font-size: 0.8px;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 900px;
+}
+
+.main, .logo, .menubar, .site_content, .footer{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo{
+    width: 880px;
+    padding-bottom: 40px;
+}
