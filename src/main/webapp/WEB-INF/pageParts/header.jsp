@@ -59,6 +59,13 @@
             </form>
         </td>
         </c:if>
+        <c:if test="${not empty sessionScope.userBean}">
+            <td>
+                <form action="/logout" method="POST">
+                    <input type="submit" value="Log out">
+                </form>
+            </td>
+        </c:if>
     </tr>
 </table>
 </body>
