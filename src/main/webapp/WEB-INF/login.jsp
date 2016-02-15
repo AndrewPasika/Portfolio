@@ -27,9 +27,6 @@
     <br><br>
     ${error}
 
-    <p bgcolor="red">reference</p>
-    <img src="pageParts/image-slider-2.jpg" alt="test image">
-    
     <%@ page errorPage="errorPages/authenticationError.jsp" %>
 </form>
 </div>

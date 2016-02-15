@@ -45,11 +45,13 @@
                 <input type="submit" value="Contacts">
             </form>
         </td>
+        <c:if test="${empty sessionScope.userBean}">
         <td>
             <form action="/login" method="GET">
-                <input type="submit" value="Sign in">
+                <input type="submit" value="Log in">
             </form>
         </td>
+        </c:if>
         <c:if test="${userBean == null}">
         <td>
             <form action="/registration" method="GET">
