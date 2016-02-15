@@ -1,12 +1,10 @@
 package services;
 
-import model.DAO.UserDAO;
-import model.javaBeans.UserBean;
+import model.DAO_oracle.UserDAO;
 
 import javax.servlet.http.HttpServletRequestWrapper;
 import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
-import java.util.List;
 
 /**
  * Created by AndriiUSER on 05.12.2015.
